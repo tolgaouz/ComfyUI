@@ -279,6 +279,7 @@ def override_models_dir(path: str) -> None:
 def add_model_folder_path(
     folder_name: str, full_folder_path: str, is_default: bool = False
 ) -> None:
+    print("add_model_folder_path", folder_name, full_folder_path, is_default)
     global folder_names_and_paths
     folder_name = map_legacy(folder_name)
     if folder_name in folder_names_and_paths:
